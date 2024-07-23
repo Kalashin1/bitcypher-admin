@@ -8,16 +8,16 @@ import { getAuth } from "firebase/auth";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDChJoSZyW8FbgmqdBfl3cfi0N5dST0v9U",
-  authDomain: "justice-consignment.firebaseapp.com",
-  projectId: "justice-consignment",
-  storageBucket: "justice-consignment.appspot.com",
-  messagingSenderId: "776580269461",
-  appId: "1:776580269461:web:827cf801bd4815fd2fa29c",
-  measurementId: "G-DP8GKYHWBJ",
+  apiKey: "AIzaSyAX0JQ_CLl6Hw14qoPKjQ8w2j3oTAM5UsM",
+  authDomain: "blockstream-23826.firebaseapp.com",
+  projectId: "blockstream-23826",
+  storageBucket: "blockstream-23826.appspot.com",
+  messagingSenderId: "26442626047",
+  appId: "1:26442626047:web:01bbb4b4bb669209bcedca",
+  measurementId: "G-BM4QNCWZY8",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
 export const auth = getAuth(app);
+export const db = getFirestore(app);
