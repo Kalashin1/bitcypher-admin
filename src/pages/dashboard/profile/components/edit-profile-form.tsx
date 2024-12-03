@@ -48,7 +48,7 @@ const EditProfileForm: FC<{
     } = formRef.current!;
 
     try {
-      await updateDoc(doc(db, "users", localStorage.getItem("user_id")!), {
+      await updateDoc(doc(db, "users", user?.id as string), {
         birthday: new Date(birthday).getTime(),
         phone,
         address,
