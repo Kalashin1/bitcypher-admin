@@ -10,8 +10,6 @@ const Profile = () => {
   const [user, setUser] = useState<User | null>(null);
   const navigate = useNavigate();
 
-  console.log("user", user);
-
   useEffect(() => {
     const set_up = async (id: string) => {
       try {
