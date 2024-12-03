@@ -9,6 +9,7 @@ import { LoaderContext } from "../../../../../App";
 const CreatePlanForm = () => {
   const [duration, setDuration] = useState(14);
   const durations = [
+    { value: 5, label: "5 Days", ROI: 30 },
     { value: 14, label: "2 Weeks", ROI: 50 },
     { value: 30, label: "30 Days", ROI: 100 },
     { value: 90, label: "3 Months", ROI: 200 },
