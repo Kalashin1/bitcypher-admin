@@ -73,7 +73,7 @@ const WithdrawalForm = () => {
         })) as Investment[];
         if (!_investments) {
           alert(
-            "You have to investment before you can withdraw, contact admin"
+            "You have to invest before you can withdraw, contact admin"
           );
           navigate(SCREENS.DASHBOARD);
         }
@@ -96,10 +96,10 @@ const WithdrawalForm = () => {
     const plan = { id: planRef.id, ...planRef.data() } as Plan;
     const planTotal = parseFloat(plan.price) * (100 / parseFloat(plan.ROI));
     try {
-      if (amount > planTotal) {
-        alert("Withdrawal amount exceeds total ROI");
-        return;
-      }
+      // if (amount > planTotal) {
+      //   alert("Withdrawal amount exceeds total ROI");
+      //   return;
+      // }
       await addDoc(collection(db, "transactions"), {
         type: "WITHDRAWAL",
         createdAt: new Date().getTime().toString(),
